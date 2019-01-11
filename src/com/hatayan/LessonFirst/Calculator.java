@@ -1,4 +1,4 @@
-package com.hatayan;
+package com.hatayan.LessonFirst;
 
 public class Calculator {
 
