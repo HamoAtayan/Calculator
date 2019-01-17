@@ -5,7 +5,7 @@ public class CalculatorSecond {
         System.out.println(Sum(1,3));
         System.out.println(Sub(5,2));
         System.out.println(Multiple(7,3));
-        System.out.println(Devide(5,2));
+        System.out.println(Divide(5,2));
     }
     public static int Sum(int a, int b){
         System.out.print(a + " + " + b + " = ");
@@ -19,7 +19,7 @@ public class CalculatorSecond {
         System.out.print(a + " * " + b + " = ");
         return  a * b;
     }
-    public static double Devide(double a, double b){
+    public static double Divide(int a, int b){
         System.out.print(a + " / " + b + " = ");
         return  a / b;
     }
