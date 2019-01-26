@@ -15,7 +15,6 @@ public class LoopForWithScanner {
            System.out.println("Please type Second Number");
            SecondNumber = scanner.nextInt();
        }
-
        return SecondNumber - FirstNumber;
    }
 

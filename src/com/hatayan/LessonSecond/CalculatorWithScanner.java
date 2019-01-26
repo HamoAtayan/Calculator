@@ -3,53 +3,63 @@ package com.hatayan.LessonSecond;
 import java.util.Scanner;
 
 public class CalculatorWithScanner {
+   static Scanner scanner = new Scanner(System.in);
 
-      static   Scanner scanner = new Scanner(System.in);
-
-       static double firstNumber = scanner.nextDouble();
-       static double secondNumber = scanner.nextDouble();
-       static String action = scanner.next();
-       static double output;
-
-    public static double inputFirstNumber(){
-        firstNumber = scanner.nextDouble();
-        return firstNumber;
-    }
-
-    public static double inputSecondNumber(){
-        secondNumber = scanner.nextDouble();
-        return secondNumber;
-    }
-
-    public static double action () {
-            String dxk = "please type + - * /";
-            while (action != "+" || action != "-" || action != "*" || action != "/") {
-                System.out.println("please type actions: +, -, *, / ");
-                action = scanner.next();
-                if (action == "+"){
-                    output = inputFirstNumber() + inputSecondNumber();
-                    System.out.println(output);
-                }
-            }
-            return output;
-            }
-            
-
-    public static void Sum(){
-
-    }
-
+    static double firstNumber;
+    static double secondNumber;
+    static String operator;
+    static double answer;
 
     public static void main(String[] args) {
-        System.out.println("please type first number");
-        System.out.println(inputFirstNumber());
-        System.out.println(action());
-        System.out.println("please type first number");
-        System.out.println(inputSecondNumber());
+        declareFirstNumber();
+        declareSecondNumber();
+        recognizeOperators();
 
     }
-        // grel metod vory kani / i depqum return secondnumber
+
+    public static void declareFirstNumber(){
+        System.out.println("please enter first number:" );
+        firstNumber = scanner.nextDouble();
+    }
+
+    public static void declareSecondNumber(){
+        System.out.println("please enter second number");
+        secondNumber = scanner.nextDouble();
+    }
+
+    public static void recognizeOperators() {
+        operator = "";
+
+        while ((operator != "+") || (operator != "-") || (operator != "*") || (operator != "/")) {
+            System.out.println("please enter operators + or - or * or / ");
+            operator = scanner.next();
+
+            if (operator == "+") {
+                answer = (firstNumber + secondNumber);
+                System.out.println("answer is:" + answer);
+                break;
+            }
+
+            if (operator == "-") {
+                answer = (firstNumber - secondNumber);
+                System.out.println("answer is:" + answer);
+                break;
+            }
+
+            if (operator == "*") {
+                answer = (firstNumber * secondNumber);
+                System.out.println("answer is:" + answer);
+                break;
+            }
+            if (operator == "/") {
+                answer = (firstNumber / secondNumber);
+                System.out.println("answer is:" + answer);
+                break;
+            }
+        }
+
+
+    }}
 
 
 
-}
