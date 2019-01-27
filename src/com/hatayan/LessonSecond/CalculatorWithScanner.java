@@ -1,9 +1,9 @@
 package com.hatayan.LessonSecond;
 
 import java.util.Scanner;
-
+// ctrl alt l
 public class CalculatorWithScanner {
-   static Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
     static double firstNumber;
     static double secondNumber;
@@ -14,59 +14,57 @@ public class CalculatorWithScanner {
         initializeFirstNumber();
         initializeSecondNumber();
         recognizeInvalidOperators();
-        detectOperation();
+//        detectOperation();
 
     }
 
-    public static void initializeFirstNumber(){
-        System.out.println("please enter first number:" );
+    public static void initializeFirstNumber() {
+        System.out.println("please enter first number:");
         firstNumber = scanner.nextDouble();
     }
 
-    public static void initializeSecondNumber(){
+    public static void initializeSecondNumber() {
         System.out.println("please enter second number");
         secondNumber = scanner.nextDouble();
     }
 
     public static void recognizeInvalidOperators() {
         operator = "";
-        while ((operator != "+") || (operator != "-") || (operator != "*") || (operator != "/")) {
+        while (!(operator.equals("+")) || !(operator.equals("-")) || !(operator.equals("*")) || !(operator.equals("/"))) {
             System.out.println("please enter operators + or - or * or / ");
             operator = scanner.next();
-                if ((operator == "+") || (operator == "-" )||(operator ==  "*" )|| (operator == "/")){
-                    detectOperation();
-                    break;
-            }
-                else continue;
+
+                detectOperation(operator);
         }
+        
     }
 
-        public static void detectOperation(){
+    public static void detectOperation(String operator) {
 
-            if (operator == "+") {
-                answer = (firstNumber + secondNumber);
-                System.out.println("answer is:" + answer);
-
-            }
-
-            if (operator == "-") {
-                answer = (firstNumber - secondNumber);
-                System.out.println("answer is:" + answer);
-
-            }
-
-            if (operator == "*") {
-                answer = (firstNumber * secondNumber);
-                System.out.println("answer is:" + answer);
-
-            }
-            if (operator == "/") {
-                answer = (firstNumber / secondNumber);
-                System.out.println("answer is:" + answer);
-            }
-
+        if (operator.equals("+")) {
+            answer = (firstNumber + secondNumber);
+            System.out.println("answer is:" + answer);
 
         }
+
+        if (operator.equals("-")) {
+            answer = (firstNumber - secondNumber);
+            System.out.println("answer is:" + answer);
+
+        }
+
+        if (operator.equals("*")) {
+            answer = (firstNumber * secondNumber);
+            System.out.println("answer is:" + answer);
+
+        }
+        if (operator.equals("/")) {
+            answer = (firstNumber / secondNumber);
+            System.out.println("answer is:" + answer);
+        }
+
+
+    }
 
 
 }

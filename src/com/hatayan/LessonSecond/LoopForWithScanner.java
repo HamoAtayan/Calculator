@@ -1,34 +1,41 @@
 package com.hatayan.LessonSecond;
-
+//shift f6 to rename all the places
 import java.util.Scanner;
 
 public class LoopForWithScanner {
-   static Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
-   static int FirstNumber = 2;
-   static int SecondNumber = 0;
-
-   public static int compareNumbers(){
-       while (FirstNumber > SecondNumber){
-           System.out.println("Pleases type First number as First Number cannot be bigger than Second Number");
-           FirstNumber = scanner.nextInt();
-           System.out.println("Please type Second Number");
-           SecondNumber = scanner.nextInt();
-       }
-       return SecondNumber - FirstNumber;
-   }
-
-
-   public static void MultiplyOfThree(){
-       for (int i = FirstNumber; i < SecondNumber; i++){
-           if (i % 3 == 0){
-               System.out.println(i);
-           }
-       }
-   }
+    static int FirstNumber;
+    static int SecondNumber;
 
     public static void main(String[] args) {
-            compareNumbers();
-            MultiplyOfThree();
+        inputRange();
+        int mybajanarar = inputBajanarar();
+        findMultiplies(FirstNumber,SecondNumber,mybajanarar);
+    }
+
+
+    public static void inputRange() {
+        System.out.print("Pleases type start of Range: ");
+        FirstNumber = scanner.nextInt();
+        System.out.print("Please type Second Number: ");
+        SecondNumber = scanner.nextInt();
+        if (FirstNumber >= SecondNumber) {
+            System.out.println("Second number should be bigger than start of Range");
+            inputRange();
+        }
+    }
+
+    public static int inputBajanarar() {
+        int bajanarar = scanner.nextInt();
+        return bajanarar;
+    }
+
+    public static void findMultiplies(int x, int y, int z) {
+        for (int i = x; i <= y; i++) {
+            if (i % z == 0) {
+                System.out.println("multiply of" + z + "is: " + i);
             }
         }
+    }
+}
