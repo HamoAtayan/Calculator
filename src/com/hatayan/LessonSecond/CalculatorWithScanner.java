@@ -11,26 +11,25 @@ public class CalculatorWithScanner {
     static double answer;
 
     public static void main(String[] args) {
-        declareFirstNumber();
+        initializeFirstNumber();
+        initializeSecondNumber();
         recognizeInvalidOperators();
-        declareSecondNumber();
         detectOperation();
 
     }
 
-    public static void declareFirstNumber(){
+    public static void initializeFirstNumber(){
         System.out.println("please enter first number:" );
         firstNumber = scanner.nextDouble();
     }
 
-    public static void declareSecondNumber(){
+    public static void initializeSecondNumber(){
         System.out.println("please enter second number");
         secondNumber = scanner.nextDouble();
     }
 
     public static void recognizeInvalidOperators() {
         operator = "";
-
         while ((operator != "+") || (operator != "-") || (operator != "*") || (operator != "/")) {
             System.out.println("please enter operators + or - or * or / ");
             operator = scanner.next();
