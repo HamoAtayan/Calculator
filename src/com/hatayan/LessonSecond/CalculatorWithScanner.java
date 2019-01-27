@@ -12,8 +12,9 @@ public class CalculatorWithScanner {
 
     public static void main(String[] args) {
         declareFirstNumber();
+        recognizeInvalidOperators();
         declareSecondNumber();
-        recognizeOperators();
+        detectOperation();
 
     }
 
@@ -27,39 +28,53 @@ public class CalculatorWithScanner {
         secondNumber = scanner.nextDouble();
     }
 
-    public static void recognizeOperators() {
+    public static void recognizeInvalidOperators() {
         operator = "";
 
         while ((operator != "+") || (operator != "-") || (operator != "*") || (operator != "/")) {
             System.out.println("please enter operators + or - or * or / ");
             operator = scanner.next();
+                if ((operator == "+") || (operator == "-" )||(operator ==  "*" )|| (operator == "/")){
+                    detectOperation();
+                    break;
+            }
+                else continue;
+        }
+    }
+
+        public static void detectOperation(){
 
             if (operator == "+") {
                 answer = (firstNumber + secondNumber);
                 System.out.println("answer is:" + answer);
-                break;
+
             }
 
             if (operator == "-") {
                 answer = (firstNumber - secondNumber);
                 System.out.println("answer is:" + answer);
-                break;
+
             }
 
             if (operator == "*") {
                 answer = (firstNumber * secondNumber);
                 System.out.println("answer is:" + answer);
-                break;
+
             }
             if (operator == "/") {
                 answer = (firstNumber / secondNumber);
                 System.out.println("answer is:" + answer);
-                break;
             }
+
+
         }
 
 
-    }}
+}
+
+
+
+
 
 
 
