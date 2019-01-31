@@ -1,5 +1,5 @@
 package com.hatayan.LessonSecond;
-//shift f6 to rename all the places
+//shift f6 to replace everywhere
 import java.util.Scanner;
 
 public class LoopForWithScanner {
