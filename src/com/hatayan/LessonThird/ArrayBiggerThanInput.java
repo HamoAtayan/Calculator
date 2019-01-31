@@ -10,12 +10,12 @@ public class ArrayBiggerThanInput {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        comparingEveryIndex();
+        printingBiggerNumbers();
     }
 
     static int[] array = {20, 1, 700, 50, 9, 651, 90, 152, 196, 1005};
 
-    static void comparingEveryIndex() {
+    static void printingBiggerNumbers() {
         System.out.print("Please type number to compare: ");
         int number = scanner.nextInt();
         for (int element : array) {
