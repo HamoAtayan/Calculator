@@ -1,4 +1,4 @@
-package com.hatayan.LessonSecond;
+package com.hatayan.Lesson2;
 
 import java.util.Scanner;
 // ctrl alt l

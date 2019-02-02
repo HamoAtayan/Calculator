@@ -1,4 +1,4 @@
-package com.hatayan.LessonSecond;
+package com.hatayan.Lesson2;
 //shift f6 to replace everywhere
 import java.util.Scanner;
 

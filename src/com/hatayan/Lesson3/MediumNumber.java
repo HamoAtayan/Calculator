@@ -1,4 +1,4 @@
-package com.hatayan.LessonThird;
+package com.hatayan.Lesson3;
 /*3. Init eghats array unenq 1 keti nman
       hashvum enq arrayi elementneri mijin tvabanakany*/
 

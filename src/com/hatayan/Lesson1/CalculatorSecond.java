@@ -1,4 +1,4 @@
-package com.hatayan.LessonFirst;
+package com.hatayan.Lesson1;
 
 public class CalculatorSecond {
     public static void main(String[] args) {

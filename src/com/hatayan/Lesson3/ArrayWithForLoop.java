@@ -1,4 +1,4 @@
-package com.hatayan.LessonThird;
+package com.hatayan.Lesson3;
 /*Array enq haytararum 50 size-ov u elementnery lcnum enq for-ov 30-ic sksats amen 3-y mek, aysinqn 30, 33, 36 ...*/
 
 public class ArrayWithForLoop {
