@@ -1,5 +1,7 @@
 package com.hatayan.Lesson4;
 
+// Grel method vory kstana array yev mi tiv, kveradarcni true ete et tivy ka arrayum.
+
 public class NumberIncludeInArray {
     static int[] arr = {10, 20, 30, 501, 1, 37, 5009, 98, 6332};
     static int num = 5009;
@@ -15,7 +17,7 @@ public class NumberIncludeInArray {
             }
         }
         return false; // does this is the optimal way about return false statement
-
     }
+
 }
 
