@@ -13,6 +13,7 @@ public class CompareTwoArrays {
             for (int j = 0; j < arraySecond.length; j++) {
                 if (arrayFirst[i] == arraySecond[j]) {
                     System.out.println("Duplicetes are: " + arrayFirst[i]);
+                    break;
                 }
             }
         }

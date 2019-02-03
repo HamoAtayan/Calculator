@@ -1,5 +1,5 @@
 package com.hatayan.Lesson4;
-//4. Grel method vor ktpi krknvogh elementnery stacac arrayi mijic
+
 public class DuplicateElementsInArray {
     static int[] arr = {1, 2, 5, 2, 8, 5, 12, 12};
 

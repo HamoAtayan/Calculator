@@ -10,13 +10,23 @@ public class ReverseArrayElements {
     }
 
     public static int[] reverseArray(int[] array) {
-        int [] array2  = new int [array.length];
+        //First Solution
+       /* int[] array2 = new int[array.length];
         int index = 0;
         for (i = array.length - 1; i > -1; i--) {
             array2[index] = array[i];
             index++;
         }
         return array2;
+    }*/
 
+       //Second Solution
+        int k;
+        for (int i = 0; i< array.length/2;i++){
+        k = array[i];
+        array[i] = array [array.length -1 -i];
+        array[array.length -1 -i] = k;
+        }
+        return array;
     }
 }
