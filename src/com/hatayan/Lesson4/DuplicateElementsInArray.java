@@ -1,5 +1,5 @@
 package com.hatayan.Lesson4;
-
+//4. Grel method vor ktpi krknvogh elementnery stacac arrayi mijic
 public class DuplicateElementsInArray {
     static int[] arr = {1, 2, 5, 2, 8, 5, 12, 12};
 
@@ -9,7 +9,7 @@ public class DuplicateElementsInArray {
 
     public static void returnDuplicate(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            for (int j = i + 1 ; j < array.length; j++) {//ask about j+1
+            for (int j = i + 1 ; j < array.length; j++) {
                 if (array[i] == array[j]) {
                     System.out.println("Duplicate numbers are :" + array[i]);
                 }

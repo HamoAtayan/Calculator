@@ -7,7 +7,7 @@ public class NumberIncludeInArray {
     static int num = 5009;
 
     public static void main(String[] args) {
-//        System.out.println(checkNumberInArray(arr, num));
+        System.out.println(checkNumberInArray(arr, num));
     }
 
     public static boolean checkNumberInArray(int[] array, int number) {
@@ -16,7 +16,7 @@ public class NumberIncludeInArray {
                 return true;
             }
         }
-        return false; // does this is the optimal way about return false statement
+        return false;
     }
 
 }
